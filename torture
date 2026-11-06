@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+# Launcher script for the torture tool:
+# ./torture --iterations N --seed S --mode M
+set -e
+exec cargo run --release --bin torture -- "$@"
